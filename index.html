@@ -7,7 +7,12 @@
     <title>project manaement dashboard</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="assets/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
 </head>
 <body>
     <div class="dashboard"> <!--dashboard-->
@@ -48,21 +53,216 @@
             <div class="title">
                 <form action="#">
                     <label for="projects">sort by</label>
-                    <select name="projects" id="projects">
-                     <option value="recent">recent project</option>
-                     <option value="finished">finished project</option>
-                     <option value="new">new project</option>
-                     <option value="ongoing">ongoing project</option>
+                     <select name="projects" id="projects">
+                      <option value="recent">recent project</option>
+                      <option value="finished">finished project</option>
+                      <option value="new">new project</option>
+                      <option value="ongoing">ongoing project</option>
                      </select>
                 </form>
             </div>
 
         </section> <!--main end-->
-        
-        <section class="summary"> <!--summary-->
+        <div class="project lists"> <!--project lists-->
+    
+          <div class="projects"> <!--project1-->
+             <div class="category"></div>
+             <h2>Graphic design</h2>
+             <p>active recently</p>
 
-        </section> <!--summary end-->
+             <ul class="activity">
+                <li>comming soon banner</li>
+                <li>book cover</li>
+             </ul>
 
+             <div class="meta">
+                <div class="contriputors">
+                    <img src="assets/img/1.jpg" alt=""/>
+                    <img src="assets/img/2.jpg" alt=""/>
+                    <img src="assets/img/3.jpg" alt=""/>
+                </div>
+                <span class="material-icons-outlined">
+                    more_vert
+                    </span>
+                 </div>
+          </div>  <!--project1 end-->
+
+          <div class="projects"> <!--project2-->
+            <div class="category"></div>
+            <h2>Magazine</h2>
+            <p>1 hour ago</p>
+
+            <ul class="activity">
+               <li>editorial page content</li>
+            </ul>
+
+            <div class="meta">
+               <div class="contriputors">
+                   <img src="assets/img/4.jpg" alt=""/>
+                   <img src="assets/img/5.jpg" alt=""/>
+               </div>
+               <span class="material-icons-outlined">
+                   more_vert
+                   </span>
+                </div>
+         </div>  <!--project2 end-->
+
+         <div class="projects"> <!--project3-->
+            <div class="category"></div>
+            <h2>layouting</h2>
+            <p>1 day ago</p>
+
+            <ul class="activity">
+               <li>fix layout on page ads</li>
+            </ul>
+
+            <div class="meta">
+               <div class="contriputors">
+                   <img src="assets/img/6.jpg" alt=""/>
+               </div>
+               <span class="material-icons-outlined">
+                   more_vert
+                   </span>
+                </div>
+         </div>  <!--project3 end-->
+
+         <div class="projects"> <!--project4-->
+            <div class="category"></div>
+            <h2>branding</h2>
+            <p>3 day ago</p>
+
+            <ul class="activity">
+               <li>brainstorming shape</li>
+            </ul>
+
+            <div class="meta">
+               <div class="contriputors">
+                   <img src="assets/img/7.jpg" alt=""/>
+               </div>
+               <span class="material-icons-outlined">
+                   more_vert
+                   </span>
+                </div>
+         </div>  <!--project4 end-->
+
+         <div class="projects"> <!--project5-->
+            <div class="category"></div>
+            <h2>Guidelines</h2>
+            <p>5 day ago</p>
+
+            <ul class="activity">
+               <li>make a brand guideline for maked cosmetics</li>
+            </ul>
+
+            <div class="meta">
+               <div class="contriputors">
+                   <img src="assets/img/1.jpg" alt=""/>
+                   <img src="assets/img/8.jpg" alt=""/>
+               </div>
+               <span class="material-icons-outlined">
+                   more_vert
+                   </span>
+                </div>
+         </div>  <!--project5 end-->
+
+         <div class="projects"> <!--project6-->
+            <div class="category"></div>
+            <h2>photoshoot</h2>
+            <p>1 week ago</p>
+
+            <ul class="activity">
+               <li>get the photoshoot ready for the magazine</li>
+            </ul>
+
+            <div class="meta">
+               <div class="contriputors">
+                   <img src="assets/img/4.jpg" alt=""/>
+                   <img src="assets/img/2.jpg" alt=""/>
+                   <img src="assets/img/3.jpg" alt=""/>
+               </div>
+               <span class="material-icons-outlined">
+                   more_vert
+                   </span>
+                </div>
+         </div>  <!--project6 end-->
+
+         </div>   <!--project lists end-->
+        <section class="overview"> <!--overview-->
+            <div class="chart">
+                <h2>Total Project</h2>
+                <canvas id="myChart" width="400" height="400"></canvas>
+
+            </div>
+            <div class="recent-project"> <!--recent-project-->
+                <div class="listings">
+                    <div class="title">
+                        <div class="category"></div>
+                        <h2>layouting</h2>
+                        <p>Mary Chuckuwma</p>
+                    </div>
+                    <span class="material-icons-outlined">
+                        more_vert
+                        </span>
+                </div>
+
+                <div class="listings">
+                    <div class="title">
+                        <div class="category"></div>
+                        <h2>Graphic design</h2>
+                        <p>Hasan Mallam</p>
+                    </div>
+                    <span class="material-icons-outlined">
+                        more_vert
+                        </span>
+                </div>
+
+                <div class="listings">
+                    <div class="title">
+                        <div class="category"></div>
+                        <h2>photoshoot</h2>
+                        <p>Taiwo Ogbomo</p>
+                    </div>
+                    <span class="material-icons-outlined">
+                        more_vert
+                        </span>
+                </div>
+
+                <div class="listings">
+                    <div class="title">
+                        <div class="category"></div>
+                        <h2>Branding</h2>
+                        <p>Charles Gambi</p>
+                    </div>
+                    <span class="material-icons-outlined">
+                        more_vert
+                        </span>
+                </div>
+
+            </div> <!--recent-project end-->
+
+
+        </section> <!--overview end-->
+
+        <script>
+            const ctx = document.getElementById('myChart').getContext('2d');
+            const myChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['completed', 'ongoing', 'stalled', ],
+                    datasets: [{
+                        label: '# of Votes',
+                        data: [12, 19, 3,],
+                        backgroundColor: [
+                            'rgba(255, 99, 132)',
+                            'rgba(54, 162, 235)',
+                            'rgba(255, 206, 86)',
+                        ],
+                    
+                    }]
+                },
+               
+            });
+            </script>
 
     </div><!--dashboard end-->
 </body>
