@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project manaement dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="dashboard"> <!--dashboard-->
+        <section class="navigation"> <!--navigation-->
+            <img src="assets/instinct-hub-logo-thumbnail.png" alt="instinct-hub-logo">
+
+            <div>
+              <span class="material-icons-outlined">  dashboard    </span>
+              <span class="material-icons-outlined"> monitor_heart
+                 </span>
+              <span class="material-icons-outlined"> people_alt
+                 </span>
+              <span class="material-icons-outlined">     event
+                 </span>
+              <span class="material-icons-outlined">  settings
+                    </span>
+            </div>
+
+        </section> <!--navigation end-->
+
+        <section class="main"> <!--main-->
+            <div class="search"> <!--search-->
+                <form action="">
+                    <span class="material-icons-outlined">
+                        search
+                        </span>
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </form>
+                <div class="notification">
+                    <span class="material-icons-outlined">
+                        notifications
+                        </span>
+                    <span class="material-icons-outlined">
+                            history_edu
+                            </span>
+                </div>
+            </div>  <!--search end-->
+            <div class="title">
+                <form action="#">
+                    <label for="projects">sort by</label>
+                    <select name="projects" id="projects">
+                     <option value="recent">recent project</option>
+                     <option value="finished">finished project</option>
+                     <option value="new">new project</option>
+                     <option value="ongoing">ongoing project</option>
+                     </select>
+                </form>
+            </div>
+
+        </section> <!--main end-->
+        
+        <section class="summary"> <!--summary-->
+
+        </section> <!--summary end-->
+
+
+    </div><!--dashboard end-->
+</body>
+</html>
