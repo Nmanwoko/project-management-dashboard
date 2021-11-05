@@ -10,3 +10,70 @@ body{
     padding: 0px 15px;
     margin: 0 auto;
 }
+
+/* =======================
+Navigation
+==========================*/
+.dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+.dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.dashboard .navigation div .material-icons-outlined{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 30px;
+    color: #727272;
+}
+.dashboard .navigation div{
+    margin-top: 12px;
+}
+/* ======================
+main dashboard
+======================== */
+
+/* search */
+
+.dashboard .main .search form{
+    margin-top: 10px;
+    position: relative;
+}
+.dashboard .main .search form input{
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 10px 10px 60px;
+    border: 1px solid #dadada;
+    background-color: rgba(0 0 0/ 0);
+}
+.dashboard .main .search form span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #727272;
+}
+.dashboard .main .search .notficaton {
+    margin-top: 20px;
+}
+.dashboard .main .search .notficaton span:nth-child(1){
+    margin-left: 15px;
+}
+
+/* my project */
+.dashboard .main .title {
+    margin-bottom: 30px;
+}
+.dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0px;
+}
