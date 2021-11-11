@@ -43,7 +43,7 @@
                     <input type="text" name="search" id="search" placeholder="Search here">
                 </form>
                 <div class="notification">
-                    <span class="material-icons-outlined">
+                    <span class="material-icons-outlined" id="notification-icon">
                         notifications
                         </span>
                     <span class="material-icons-outlined">
@@ -55,20 +55,21 @@
                 <h1>My Project</h1>
                 <form action="#">
                     <label for="projects">sort by</label>
-                     <select name="projects" id="projects">
+                    <select name="projects" id="projects">
                       <option value="recent">recent project</option>
                       <option value="finished">finished project</option>
                       <option value="new">new project</option>
                       <option value="ongoing">ongoing project</option>
-                     </select>
+                  </select>
                 </form>
             </div>
 
-        </section> <!--main end-->
-        <div class="project lists"> <!--project lists-->
+       
+        
+         <div class="project-lists"> <!--project lists-->
     
           <div class="projects"> <!--project1-->
-             <div class="category"></div>
+             <div class="category category-color1"></div>
              <h2>Graphic design</h2>
              <p>active recently</p>
 
@@ -80,8 +81,8 @@
              <div class="meta">
                 <div class="contriputors">
                     <img src="assets/img/1.jpg" alt=""/>
-                    <img src="assets/img/2.jpg" alt=""/>
-                    <img src="assets/img/3.jpg" alt=""/>
+                    <img src="assets/img/2.jpg" alt="" class="stack"/>
+                    <img src="assets/img/3.jpg" alt=""class="stack"/>
                 </div>
                 <span class="material-icons-outlined">
                     more_vert
@@ -90,7 +91,7 @@
           </div>  <!--project1 end-->
 
           <div class="projects"> <!--project2-->
-            <div class="category"></div>
+            <div class="category category-color2"></div>
             <h2>Magazine</h2>
             <p>1 hour ago</p>
 
@@ -101,7 +102,7 @@
             <div class="meta">
                <div class="contriputors">
                    <img src="assets/img/4.jpg" alt=""/>
-                   <img src="assets/img/5.jpg" alt=""/>
+                   <img src="assets/img/5.jpg" alt=""class="stack"/>
                </div>
                <span class="material-icons-outlined">
                    more_vert
@@ -110,7 +111,7 @@
          </div>  <!--project2 end-->
 
          <div class="projects"> <!--project3-->
-            <div class="category"></div>
+            <div class="category category-color1"></div>
             <h2>layouting</h2>
             <p>1 day ago</p>
 
@@ -129,7 +130,7 @@
          </div>  <!--project3 end-->
 
          <div class="projects"> <!--project4-->
-            <div class="category"></div>
+            <div class="category category-color3"></div>
             <h2>branding</h2>
             <p>3 day ago</p>
 
@@ -148,7 +149,7 @@
          </div>  <!--project4 end-->
 
          <div class="projects"> <!--project5-->
-            <div class="category"></div>
+            <div class="category category-color3"></div>
             <h2>Guidelines</h2>
             <p>5 day ago</p>
 
@@ -159,7 +160,7 @@
             <div class="meta">
                <div class="contriputors">
                    <img src="assets/img/1.jpg" alt=""/>
-                   <img src="assets/img/8.jpg" alt=""/>
+                   <img src="assets/img/8.jpg" alt=""class="stack"/>
                </div>
                <span class="material-icons-outlined">
                    more_vert
@@ -168,7 +169,7 @@
          </div>  <!--project5 end-->
 
          <div class="projects"> <!--project6-->
-            <div class="category"></div>
+            <div class="category category-color2"></div>
             <h2>photoshoot</h2>
             <p>1 week ago</p>
 
@@ -179,8 +180,8 @@
             <div class="meta">
                <div class="contriputors">
                    <img src="assets/img/4.jpg" alt=""/>
-                   <img src="assets/img/2.jpg" alt=""/>
-                   <img src="assets/img/3.jpg" alt=""/>
+                   <img src="assets/img/2.jpg" alt=""class="stack"/>
+                   <img src="assets/img/3.jpg" alt=""class="stack"/>
                </div>
                <span class="material-icons-outlined">
                    more_vert
@@ -189,18 +190,24 @@
          </div>  <!--project6 end-->
 
          </div>   <!--project lists end-->
+        </section> <!--main end-->
+
+
         <section class="overview"> <!--overview-->
             <div class="chart">
                 <h2>Total Project</h2>
                 <canvas id="myChart" width="400" height="400"></canvas>
-
+                 <div class="completed">
+                     <h3>3 completed</h3>
+                     <p>from 5 projects</p>
+                 </div>
             </div>
             <div class="recent-project"> <!--recent-project-->
                 <div class="listings">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category-color3"></div>
                         <h2>layouting</h2>
-                        <p>Mary Chuckuwma</p>
+                        <p> By Mary Chuckuwma</p>
                     </div>
                     <span class="material-icons-outlined">
                         more_vert
@@ -209,9 +216,9 @@
 
                 <div class="listings">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category-color1"></div>
                         <h2>Graphic design</h2>
-                        <p>Hasan Mallam</p>
+                        <p>By Hasan Mallam</p>
                     </div>
                     <span class="material-icons-outlined">
                         more_vert
@@ -220,9 +227,9 @@
 
                 <div class="listings">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category-color2"></div>
                         <h2>photoshoot</h2>
-                        <p>Taiwo Ogbomo</p>
+                        <p>By Taiwo Ogbomo</p>
                     </div>
                     <span class="material-icons-outlined">
                         more_vert
@@ -231,9 +238,9 @@
 
                 <div class="listings">
                     <div class="title">
-                        <div class="category"></div>
+                        <div class="category category-color4"></div>
                         <h2>Branding</h2>
-                        <p>Charles Gambi</p>
+                        <p>By Charles Gambi</p>
                     </div>
                     <span class="material-icons-outlined">
                         more_vert
