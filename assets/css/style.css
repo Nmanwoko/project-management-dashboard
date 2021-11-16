@@ -171,6 +171,7 @@ overview
     padding: 15px;
     position: relative;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 .dashboard .overview .chart .completed{
     text-align: center;
@@ -198,6 +199,7 @@ overview
     background-color: #fff;
     position: relative;
     margin-bottom: 30px;
+    border-radius: 10px;
 }
 .dashboard .overview .recent-project .listings .category{
     width: 16px;
@@ -208,5 +210,50 @@ overview
     margin-top: 20px;
 }
 
+/* ======================
+media query 768px
+======================== */
+@media only screen and (min-width: 768px){
+    section.main .project-lists{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    section.main .project-lists .projects{
+        width: 47%;
+    }
+    section.main .project-lists .projects span{
+        margin-top: 16px;
+    }
+
+    /* overview */
+    section.overview{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: #fff;
+        border-radius: 10px;
+        padding-top: 50px;
+    }
+    section.overview .chart{
+        width: 40%;
+    }
+    section.overview .recent-project{
+        width: 55%;
+    }  
+    section.overview .recent-project .listings span{
+        margin-top: 18px;
+    }
+}
 
 
+/* ======================
+media query 1024px
+======================== */
+@media only screen and (min-width: 1024px){
+    .dashboard .navigation,
+    .dashboard .navigation div span,
+    .dashboard .overview{
+        display: block;
+    }
+}
