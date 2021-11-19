@@ -254,6 +254,53 @@ media query 1024px
     .dashboard .navigation,
     .dashboard .navigation div span,
     .dashboard .overview{
-        display: block;
+        /* display: block; */
+        flex-direction: column;
+    }
+    .dashboard .navigation{
+        width: 80px;
+        position: fixed;
+        z-index: 10;
+        height: 100vh;
+        margin-top: 0px;
+    }
+    section.main{
+        width: 60%;
+        margin-left: 90px;
+        margin-right: 20px;
+    }
+    section.overview{
+        position: fixed;
+        width: 30%;
+        padding-top: 0px;
+        top: 20px;
+        right: 0px;
+        background-color: transparent;
+    }
+    section.overview .chart,
+    section.overview .recent-project{
+        width: 100%;
+        height: 50vh;
+    }
+    .dashboard.navigation div{
+        margin-top: 19vh;
+        margin-bottom: 19vh;
+    }
+    .dashboard .navigation div span{
+        margin-top: 5vh;
+    }
+    section.main{
+        width: 62%;
     }
 }
+
+
+/* ======================
+media query 1111px
+======================== */
+@media only screen and (min-width: 1111px){
+    section.main .project-lists .projects{
+        width: 32%;
+    }
+}
+
